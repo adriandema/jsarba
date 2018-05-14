@@ -51,11 +51,11 @@ for (i = 0; i < numLines; i++) {
 $( "body" ).keydown(function( event ) {
   if ( event.which == 121 ) {
    event.preventDefault();
-  }
-  if (($('#dlgchapas').dialog('isOpen') === true)){
+   if (($('#dlgchapas').dialog('isOpen') === true)){
 	$(".ui-dialog").dialog('close');
-  } else {
-	  $(".ui-dialog").dialog('open');
+   } else {
+    $(".ui-dialog").dialog('open');
+   }
   }
 });
 	 
