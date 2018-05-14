@@ -52,10 +52,10 @@ $( "body" ).keydown(function( event ) {
   if ( event.which == 121 ) {
    event.preventDefault();
   }
-  if ($("#dlgchapas).length==0){
-	$(".ui-dialog").dialog('open');
+  if (($('#dlgchapas').dialog('isOpen') === true)){
+	$(".ui-dialog").dialog('close');
   } else {
-	  $(".ui-dialog").dialog('close');
+	  $(".ui-dialog").dialog('open');
   }
 });
 	 
