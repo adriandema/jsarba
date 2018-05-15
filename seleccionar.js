@@ -9,6 +9,7 @@ $('body').append("<div id='dlgchapas' title='marcar dominios automotor' class='d
 "</div>")
 
 $("#dlgchapas").dialog({ autoOpen: false });
+$( "#dlgchapas" ).draggable();
 
 
 function marcarDeudaV(pchecked){
@@ -52,9 +53,9 @@ $( "body" ).keydown(function( event ) {
   if ( event.which == 121 ) {
    event.preventDefault();
    if (($('#dlgchapas').dialog('isOpen') === true)){
-	$(".ui-dialog").dialog('close');
+	$("#dlgchapas").dialog('close');
    } else {
-    $(".ui-dialog").dialog('open');
+    $("#dlgchapas").dialog('open');
    }
   }
 });
