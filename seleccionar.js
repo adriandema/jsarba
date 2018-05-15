@@ -3,10 +3,12 @@
 $('body').append("<div id='dlgchapas' title='marcar dominios automotor' class='dlg'>"+
 "<b>Lista de Dominios</b><br/>"+
 "<textarea id='txtchapas' name='chapas' rows='4' cols='100'></textarea>"+
+"<div>"+
 "<br/><b>Vencida: </b><input value='Marcar' type='button' onclick='marcarDeudaV(true);'/> <input value='Desmarcar' type='button' onclick='marcarDeudaV(false);'/>"+
 "<br/><b>Próximo Vencimiento: </b><input value='marcar ' type='button' onclick='marcarDeudaC(true);'/> <input value='Desmarcar' type='button' onclick='marcarDeudaC(false);'/>"+
 "<br/><b>Saldo Anual: </b><input value='marcar ' type='button' onclick='marcarDeudaS(true);'/> <input value='Desmarcar' type='button' onclick='marcarDeudaS(false);'/>"+
 "<br/><b>Total: </b><input value='marcar ' type='button' onclick='marcarDeudaT(true);'/> <input value='Desmarcar' type='button' onclick='marcarDeudaT(false);'/>"+
+"</div>"+
 "</div>")
 
 $("#dlgchapas").dialog({ autoOpen: false });
